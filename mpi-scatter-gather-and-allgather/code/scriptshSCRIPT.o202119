@@ -1,0 +1,36 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: script.sh
+  The time limit is 60:00:00 HH:MM:SS.
+  The target directory is: /home/ualmkc001/HPC_book/chap3/mpitutorial/tutorials/mpi-scatter-gather-and-allgather/code
+  The working directory is:  /scratch-local/ualmkc001.scriptshSCRIPT.202119.asax-pbs1
+  The memory limit is: 4gb
+  The job will start running after: 202410241315.34
+  Job Name: scriptshSCRIPT
+  Queue: -q small
+  Constraints: 
+  Using  1  cores on master node  asax002.asc.edu
+  Node list:  asax002.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asax006.asc.edu asax006.asc.edu asax006.asc.edu asax009.asc.edu
+  Cores:  8
+  Command typed:
+/scripts/run_script_mpi script.sh     
+  Queue submit command:
+qsub -q small -j oe -N scriptshSCRIPT -a 202410241315.34 -r n -M mhchowdhury@crimson.ua.edu -l walltime=60:00:00 -l select=8:mpiprocs=1:mem=500mb 
+ 
+make: Nothing to be done for 'all'.
+Avg of all elements is 0.501119
+Avg computed across original data is 0.501116
+=----------------=
+
+
+Avg of all elements from proc 0 is 0.500706
+Avg of all elements from proc 4 is 0.500706
+Avg of all elements from proc 6 is 0.500706
+Avg of all elements from proc 2 is 0.500706
+Avg of all elements from proc 7 is 0.500706
+Avg of all elements from proc 5 is 0.500706
+Avg of all elements from proc 3 is 0.500706
+Avg of all elements from proc 1 is 0.500706

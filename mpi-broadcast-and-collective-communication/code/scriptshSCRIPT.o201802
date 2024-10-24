@@ -1,0 +1,39 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: script.sh
+  The time limit is 60:00:00 HH:MM:SS.
+  The target directory is: /home/ualmkc001/HPC_book/chap3/mpitutorial/tutorials/mpi-broadcast-and-collective-communication/code
+  The working directory is:  /scratch-local/ualmkc001.scriptshSCRIPT.201802.asax-pbs1
+  The memory limit is: 4gb
+  The job will start running after: 202410232353.40
+  Job Name: scriptshSCRIPT
+  Queue: -q small
+  Constraints: 
+  Using  8  cores on master node  asaxg005.asc.edu
+  Node list:  asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu
+  Cores:  8
+  Command typed:
+/scripts/run_script_mpi script.sh     
+  Queue submit command:
+qsub -q small -j oe -N scriptshSCRIPT -a 202410232353.40 -r n -M mhchowdhury@crimson.ua.edu -l walltime=60:00:00 -l select=8:mpiprocs=1:mem=500mb 
+ 
+make: Nothing to be done for 'all'.
+Usage: compare_bcast num_elements num_trials
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+Usage: compare_bcast num_elements num_trials
+Usage: compare_bcast num_elements num_trials
+Usage: compare_bcast num_elements num_trials
+Usage: compare_bcast num_elements num_trials
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[52425,1],2]
+  Exit code:    1
+--------------------------------------------------------------------------

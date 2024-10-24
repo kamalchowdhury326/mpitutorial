@@ -1,0 +1,31 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: script.sh
+  The time limit is 60:00:00 HH:MM:SS.
+  The target directory is: /home/ualmkc001/HPC_book/chap3/mpitutorial/tutorials/mpi-broadcast-and-collective-communication/code
+  The working directory is:  /scratch-local/ualmkc001.scriptshSCRIPT.201801.asax-pbs1
+  The memory limit is: 4gb
+  The job will start running after: 202410232351.58
+  Job Name: scriptshSCRIPT
+  Queue: -q small
+  Constraints: 
+  Using  8  cores on master node  asaxg005.asc.edu
+  Node list:  asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu asaxg005.asc.edu
+  Cores:  8
+  Command typed:
+/scripts/run_script_mpi script.sh     
+  Queue submit command:
+qsub -q small -j oe -N scriptshSCRIPT -a 202410232351.58 -r n -M mhchowdhury@crimson.ua.edu -l walltime=60:00:00 -l select=8:mpiprocs=1:mem=500mb 
+ 
+make: Nothing to be done for 'all'.
+Process 0 broadcasting data 100
+Process 1 received data 100 from root process
+Process 2 received data 100 from root process
+Process 3 received data 100 from root process
+Process 4 received data 100 from root process
+Process 5 received data 100 from root process
+Process 6 received data 100 from root process
+Process 7 received data 100 from root process

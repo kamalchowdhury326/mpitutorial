@@ -1,0 +1,27 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: script.sh
+  The time limit is 60:00:00 HH:MM:SS.
+  The target directory is: /home/ualmkc001/HPC_book/chap3/mpitutorial/tutorials/dynamic-receiving-with-mpi-probe-and-mpi-status/code
+  The working directory is:  /scratch-local/ualmkc001.scriptshSCRIPT.201795.asax-pbs1
+  The memory limit is: 2gb
+  The job will start running after: 202410232303.28
+  Job Name: scriptshSCRIPT
+  Queue: -q small
+  Constraints: 
+  Using  2  cores on master node  asaxg005.asc.edu
+  Node list:  asaxg005.asc.edu asaxg005.asc.edu
+  Cores:  2
+  Command typed:
+/scripts/run_script_mpi script.sh     
+  Queue submit command:
+qsub -q small -j oe -N scriptshSCRIPT -a 202410232303.28 -r n -M mhchowdhury@crimson.ua.edu -l walltime=60:00:00 -l select=2:mpiprocs=1:mem=1000mb 
+ 
+make: Nothing to be done for 'all'.
+0 sent 35 numbers to 1
+1 received 35 numbers from 0. Message source = 0, tag = 0
+0 sent 50 numbers to 1
+1 dynamically received 50 numbers from 0.
